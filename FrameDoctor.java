@@ -20,6 +20,7 @@ public class FrameDoctor {
     JTextField IDTextField = new JTextField();
     JButton addDoctor = new JButton("Add Doctor");
     JButton logoutButton = new JButton("Logout");
+    JButton backButton =  new JButton("Back");
 
     // launch application
     public static void main(String[] args) {
@@ -45,6 +46,34 @@ public class FrameDoctor {
     }
 
     private void addActionEvent() {
+        addDoctor.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                DBManager manager = new DBManager();
+                try {
+                    manager.insertDoc(IDTextField.getText(), nameTextField.getText(), Integer.parseInt(numberTextField.getText()), specialityTextField.getText(), genderTextField.getText());
+                } catch (Exception ex) {
+                    ex.printStackTrace();
+                }
+                JOptionPane.showMessageDialog(doctorFrame, nameTextField.getText() + " has been added to the doctor database");
+
+                IDTextField.setText("");
+                nameTextField.setText("");
+                numberTextField.setText("");
+                specialityTextField.setText("");
+                genderTextField.setText("");
+            }
+        });
+
+        backButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                HomeFrame hf = new HomeFrame();
+                hf.homeFrame.setVisible(true);
+                doctorFrame.dispose();
+            }
+        });
+
         logoutButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -56,27 +85,35 @@ public class FrameDoctor {
     }
 
     private void addColours() {
-//        importDButton.setForeground(Color.WHITE);
-//        importDButton.setBackground(Color.BLACK);
+        addDoctor.setForeground(Color.WHITE);
+        addDoctor.setBackground(Color.BLACK);
+
+        logoutButton.setForeground(Color.WHITE);
+        logoutButton.setBackground(Color.BLACK);
+
+        backButton.setForeground(Color.WHITE);
+        backButton.setBackground(Color.BLACK);
     }
 
     private void setLocationAndSize() {
-        nameLabel.setBounds(100, 8, 70, 20);
-        nameTextField.setBounds(100, 27, 193, 28);
-        numberTextField.setBounds(100, 75, 193, 28);
-        genderTextField.setBounds(100, 199, 193, 28);
-        specialityTextField.setBounds(100, 157, 193, 28);
-        IDTextField.setBounds(100, 115, 193, 28);
-        numberLabel.setBounds(100, 55, 200, 20);
-        genderLabel.setBounds(100, 180, 194, 28);
-        specialityLabel.setBounds(100, 135, 194, 28);
-        IDLabel.setBounds(100, 95, 194, 28);
-        addDoctor.setBounds(100, 250, 110, 25);
-        logoutButton.setBounds(460, 10, 110, 25);
+        nameLabel.setBounds(25, 8, 70, 20);
+        nameTextField.setBounds(25, 27, 193, 28);
+        numberLabel.setBounds(25, 55, 200, 20);
+        numberTextField.setBounds(25, 75, 193, 28);
+        genderLabel.setBounds(25, 180, 194, 28);
+        genderTextField.setBounds(25, 199, 193, 28);
+        specialityLabel.setBounds(25, 135, 194, 28);
+        specialityTextField.setBounds(25, 157, 193, 28);
+        IDLabel.setBounds(25, 95, 194, 28);
+        IDTextField.setBounds(25, 115, 193, 28);
+        addDoctor.setBounds(25, 250, 110, 25);
+        logoutButton.setBounds(290, 10, 77, 25);
+        backButton.setBounds(290, 50, 77, 25);
 
     }
 
     public void initialise(){
+        doctorFrame.setTitle("Enter Details:");
         doctorFrame.setBounds(10, 10, 400, 330);
         doctorFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         doctorFrame.setResizable(false);
@@ -94,9 +131,7 @@ public class FrameDoctor {
         container.add(IDTextField);
         container.add(addDoctor);
         container.add(logoutButton);
-
-
-
+        container.add(backButton);
     }
 
 
