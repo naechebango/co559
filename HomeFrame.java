@@ -12,6 +12,8 @@ public class HomeFrame {
     JLabel actionLabel = new JLabel("Actions:");
     JLabel welcomeLabel = new JLabel("Welcome to the Home Page");
     JButton importDButton = new JButton("Import Doctor");
+    JButton logoutButton = new JButton("Logout");
+
 
     // launch application
     public static void main(String[] args) {
@@ -45,11 +47,23 @@ public class HomeFrame {
                 homeFrame.dispose();
             }
         });
+
+        logoutButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                FrameLogin lf = new FrameLogin();
+                lf.loginFrame.setVisible(true);
+                homeFrame.dispose();
+            }
+        });
     }
 
     private void addColours() {
         importDButton.setForeground(Color.WHITE);
         importDButton.setBackground(Color.BLACK);
+
+        logoutButton.setForeground(Color.WHITE);
+        logoutButton.setBackground(Color.BLACK);
     }
 
     private void setLocationAndSize() {
@@ -57,10 +71,12 @@ public class HomeFrame {
         actionLabel.setBounds(10, 32, 120, 20);
         messagesLabel.setBounds(200, 150, 110, 20);
         importDButton.setBounds(10, 57, 130, 25);
+        logoutButton.setBounds(290, 10, 77, 25);
 
     }
 
     public void initialise(){
+        homeFrame.setTitle("Home Page");
         homeFrame.setBounds(10, 10, 400, 300);
         homeFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         homeFrame.setResizable(false);
@@ -70,6 +86,8 @@ public class HomeFrame {
         container.add(actionLabel);
         container.add(importDButton);
         container.add(welcomeLabel);
+        container.add(logoutButton);
+
     }
 
 
