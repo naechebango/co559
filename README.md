@@ -43,9 +43,7 @@ Our project boasts several key features:
 ## Contributors
 This project was a collaborative effort, and each team member played a vital role:
 
-- **[Your Name]:** Responsible for creating, connecting, retrieving, and modifying information in the database. Additionally, [Your Name] contributed to the frontend design of the GUI frames and played a key role in defining the database schema.
-
-- **[Teammate Names]:** Mention the contributions of your teammates and their roles in the project.
+- **[Cheta Ezenwoye]:** Responsible for creating, connecting, retrieving, and modifying information in the database. Additionally, [Your Name] contributed to the frontend design of the GUI frames and played a key role in defining the database schema.
 
 ## Getting Started
 To explore and use our Hospital Management System, follow these steps:
