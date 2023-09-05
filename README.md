@@ -36,6 +36,7 @@ Our project boasts several key features:
 ## Screenshots
 ### SQL Database Schema
 ![Database Schema](screenshots/database_schema.png)
+<img src="https://user-images.githubusercontent.com/88289210/158197789-9670546c-e63c-444e-8352-2fa36373f163.png" height="100">  <img src="https://user-images.githubusercontent.com/88289210/158198062-80bdcac4-d501-4b0a-94d4-0752fc88f5fd.png" height="100">  <img src="https://user-images.githubusercontent.com/88289210/158198238-80c366f3-6507-4e8f-9967-d47b8a48c977.png" height="100">
 
 ### GUI Screenshots
 1. **Doctor Information Management**
