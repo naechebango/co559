@@ -59,9 +59,6 @@ To explore and use our Hospital Management System, follow these steps:
 - **SQL Database (MySQL):** To store and manage hospital-related data.
 - **MySQL Workbench:** For designing and visualizing the database schema.
 
-## License
-This project is licensed under the [MIT License](LICENSE.md) - feel free to use and modify it as needed for your own projects.
-
 ## Acknowledgments
 We would like to express our gratitude to our instructor and the entire course staff for their guidance and support throughout the development of this project. Additionally, we appreciate the collaborative efforts of our team members, which made this project a success.
 
