@@ -38,13 +38,13 @@ Our project boasts several key features:
 
    <img src="https://user-images.githubusercontent.com/88289210/158196481-f608f226-089f-4ed3-ad98-a58a6b7a0d4c.png" height="200">
 
-3. **Patient Information Management**
+2. **Patient Information Management**
 
    <img src="https://user-images.githubusercontent.com/88289210/158196951-c4bb85c1-96f6-42ef-9dd0-a482f19749a6.png" height="200">
 
-4. **Appointment Information Management**
+3. **Appointment Information Management**
    
-   <img src="https://user-images.githubusercontent.com/88289210/158196951-c4bb85c1-96f6-42ef-9dd0-a482f19749a6.png" height="200">
+   <img src="https://user-images.githubusercontent.com/88289210/158197089-2fecb28d-ff1e-48b2-8a96-795fef831bf6.png" height="200">
 
 ## Contributors
 This project was a collaborative effort, and each team member played a vital role:
