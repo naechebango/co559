@@ -35,10 +35,13 @@ Our project boasts several key features:
 
 ### GUI Screenshots
 1. **Doctor Information Management**
-   ![Doctor Information Management](screenshots/doctor_management.png)
+   <img src="https://user-images.githubusercontent.com/88289210/158196481-f608f226-089f-4ed3-ad98-a58a6b7a0d4c.png" height="200">
 
-2. **Patient Appointment Booking**
-   ![Patient Appointment Booking](screenshots/appointment_booking.png)
+2. **Patient Information Management**
+   <img src="https://user-images.githubusercontent.com/88289210/158196951-c4bb85c1-96f6-42ef-9dd0-a482f19749a6.png" height="200">
+
+2. **Appointment Information Management**
+   <img src="https://user-images.githubusercontent.com/88289210/158196951-c4bb85c1-96f6-42ef-9dd0-a482f19749a6.png" height="200">
 
 ## Contributors
 This project was a collaborative effort, and each team member played a vital role:
